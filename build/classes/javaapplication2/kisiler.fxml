@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="javaapplication2.KisilerController">
+   <children>
+      <TableView fx:id="kisiler_table" layoutX="113.0" layoutY="63.0" prefHeight="284.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="ad_col" prefWidth="116.00000762939453" text="Kullanıcı adı" />
+          <TableColumn fx:id="edit_col" prefWidth="77.99998474121094" text="Edit" />
+            <TableColumn fx:id="kisi_id_col" minWidth="0.0" prefWidth="4.000030517578125" text="Column X" />
+        </columns>
+      </TableView>
+      <Button fx:id="geri" layoutX="442.0" layoutY="369.0" mnemonicParsing="false" onAction="#geriAct" text="Geri" />
+   </children>
+</AnchorPane>

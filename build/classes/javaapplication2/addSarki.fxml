@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication2.AddSarkiController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Şarkı adı" textAlignment="CENTER" wrappingWidth="128.8033962249756">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="Sarki_adi" prefHeight="25.0" prefWidth="303.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="110.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Şarkı Tarihi" textAlignment="CENTER" wrappingWidth="128.8033962249756">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <DatePicker fx:id="Tarih" prefHeight="25.0" prefWidth="303.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="35.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="110.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sanatçı" textAlignment="CENTER" wrappingWidth="128.8033962249756">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="Sanatci" prefHeight="25.0" prefWidth="303.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="35.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="181.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Albüm" textAlignment="CENTER" wrappingWidth="128.8033962249756">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="Album" prefHeight="25.0" prefWidth="303.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="35.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="206.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tür" textAlignment="CENTER" wrappingWidth="128.8033962249756">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="Tur" prefHeight="25.0" prefWidth="303.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="35.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="231.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Süre" textAlignment="CENTER" wrappingWidth="128.8033962249756">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="Sure" prefHeight="25.0" prefWidth="303.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="35.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="102.0" prefWidth="508.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#Kaydet" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: #00E676;" text="Kaydet" />
+            <Button mnemonicParsing="false" onMouseClicked="#Iptal" prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #fc3d03;" text="İptal">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

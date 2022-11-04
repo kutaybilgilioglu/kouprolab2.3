@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="javaapplication2.FXMLController">
+   <children>
+      <TextField fx:id="kullanici_adi_kayıt" layoutX="65.0" layoutY="61.0" />
+      <TextField fx:id="email_kayit" layoutX="65.0" layoutY="128.0" />
+      <TextField fx:id="ulke_kayit" layoutX="65.0" layoutY="250.0" />
+      <PasswordField fx:id="Sifre_kayit" layoutX="65.0" layoutY="187.0" />
+      <Label layoutX="76.0" layoutY="33.0" text="Kullanıcı adı" />
+      <Label layoutX="71.0" layoutY="100.0" text="E-Mail" />
+      <Label layoutX="69.0" layoutY="162.0" text="Şifre oluşturun" />
+      <Label layoutX="76.0" layoutY="221.0" text="Ülke" />
+      <Button fx:id="kaydolBtn" layoutX="224.0" layoutY="287.0" mnemonicParsing="false" onAction="#kaydolBtnAct" text="Kaydol" />
+      <CheckBox fx:id="Premium_kayit" layoutX="71.0" layoutY="291.0" mnemonicParsing="false" onAction="#Premium_kayitAct" text="Premium" />
+      <Label layoutX="76.0" layoutY="359.0" text="Zaten bir hesabınız var mı? Giriş yapın" />
+      <Button fx:id="Giris_ekranBtn" layoutX="300.0" layoutY="355.0" mnemonicParsing="false" onAction="#Giris_ekranBtnAct" text="Giriş" />
+   </children>
+</AnchorPane>
